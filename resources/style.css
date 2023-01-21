@@ -1,0 +1,189 @@
+*, html, body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  html {
+    font-size: 16px;
+  }
+  body {
+    background: url(mozaikone.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
+  }
+nav {
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5), -1px -1px 2px #C0F3FE;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; 
+    padding: .5em 0 .5em 0;
+}
+nav i {
+  color: #E5FDFF;
+  font-size: 2.2em;
+  margin-left: 1em;
+}
+nav h1 {
+    color: #E5FDFF;
+    font-size: 3em;
+    font-family: 'Coda Caption';
+    letter-spacing: 0.3em; 
+    text-shadow: 0 6px 6px rgba(0, 0, 0, 0.4);
+}
+nav ul {
+    display: inline-flex;
+    justify-content: space-between;
+    margin-right: 1.5em;
+    gap: 1em;
+  }
+  nav ul li {
+    list-style: none;
+  }
+  nav ul li:not(:last-child) {
+    padding-right: 1em;
+
+  }
+  ul li a {
+    text-decoration: none;
+    color: #E5FDFF;
+    font-size: 1.5em;
+  }
+  ul li a:hover {
+    color: #B40E9E;
+  }
+
+ #alert {
+  width: 50%;
+  background-color: white;
+  margin: 10rem auto;
+  text-align: center;
+  letter-spacing: .3em;
+  padding: 10px 20px;
+  border-radius: 2rem;
+  color: #e25151;
+  font-size: 1.2rem;
+  animation: 1s cubic-bezier(0.16, 1, 0.3, 1) cardAnimate;
+ }
+  
+  #card {
+    background: rgba(255, 255, 255, 0.16);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1), -1px -1px 2px #C0F3FE;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid linear-gradient(#FDFFFE, #217DE0);
+    height: 230px;
+    width: 450px;
+    border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+    vertical-align: middle;
+    margin: 20rem auto;
+    animation: 1s cubic-bezier(0.16, 1, 0.3, 1) cardAnimate;
+  }
+
+  .cardtitle {
+    font-weight: 600;
+    font-size: 1.9rem;
+    color: #E8FFFF;
+    text-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+    margin: 1rem auto;
+  }
+  #cardimages {
+    display: flex;
+    justify-content: space-between;
+  }
+  #cardimages img {
+    width: 5.5em;
+    margin-top: -1em;
+  }
+  .cclogos {
+    margin-right: 2.8em;
+    margin-top: .8em;
+    color: #FFFFFF;
+    
+  }
+  input[type=number], select 
+  {
+      width: 70%; 
+      background: transparent;
+      border: none;
+      border-bottom:2px dashed #E8FFFF;
+      margin-left: 2em;
+      font-size: 1.5em;
+      color: #FFFFFF;
+  }
+  input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+  textarea:focus, input:focus{
+    outline: none;
+}
+::placeholder {
+  color: #B3EBFF;
+  opacity: .8;
+}
+  .name {
+    font-family: 'Merriweather';
+    font-weight: 200;
+    margin-top: 1em;
+    margin-left: 1.9em;
+    color: white;
+  }
+  .check {
+    display: flex;
+    justify-content: center;
+    margin-top: -14rem;
+    margin-bottom: 10rem;
+  }
+  .button {
+    background-color: #74CF1F;
+    border: none;
+    border-radius: 1rem;
+    color: #E5FDFF ;
+    padding: 20px 40px;
+    margin-top: 3rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 2rem;
+    font-weight: 700;
+    cursor: pointer;
+    animation: 1.4s cubic-bezier(0.16, 1, 0.3, 1) cardAnimate;
+  }
+  .button:hover {
+    background-color: #E5FDFF;
+    color: #AF0C9E;
+    border: 2px solid white;
+  }
+  @keyframes cardAnimate {
+    from {
+      transform: translateY(100vh);
+      opacity: 0.1;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  @media only screen and (max-width: 1102px) {
+    nav ul {
+      display: none;
+    }
+    nav i {
+      display: none !important;
+    }
+    
+    nav h1 {
+      margin: 0 auto;
+    }

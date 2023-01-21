@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Coda+Caption&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/20c9245509.js" crossorigin="anonymous"></script>
+    <title>Credit Card Validator</title>
+    <link rel="stylesheet" href="resources/style.css">
+</head>
+<body>
+    <nav>
+       <i class="fa-regular fa-credit-card"></i>
+        <h1>Credit Card Validator</h1>
+        <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Info</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+    </nav>
+
+    <div id="alert">
+        <h2>Invalid credit card number!</h2>
+    </div>
+    
+    <div id="card">
+        <h2 class="cardtitle">Enter Card Number</h2>
+     <div id="cardimages">
+        <img src="./resources/chip.png" alt="">
+        <div class="cclogos">
+            <i id="visa" class="fa-brands fa-cc-visa fa-2x"></i>
+            <i id="master" class="fa-brands fa-cc-mastercard fa-2x"></i>
+            <i id="amex" class="fa-brands fa-cc-amex fa-2x"></i>
+            <i id="diners" class="fa-brands fa-cc-diners-club fa-2x"></i>
+    </div>
+     </div>  
+        <form name="form1" action="#">
+            <input id="creditCard" type="number" name="text1" placeholder="0000-0000-0000-0000" onkeyup="myFunction()"required>
+        </form>  
+        <p class="name">John Doe</p>
+    </div>
+       <div class="check">
+        <button class="button" onclick="cardnumber(document.form1.text1)">Check</button>
+       </div>
+       <script src="script.js"></script>      
+</body>
+</html>
